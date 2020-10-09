@@ -139,3 +139,28 @@ header {
 .logo-box:hover {
 transform: rotateY(360deg);
 }
+
+.btn1 {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-58%, -50%);
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 0.5rem;
+    margin: 1rem;
+    opacity: 0;
+    animation-name: btn1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+@keyframes btn1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
